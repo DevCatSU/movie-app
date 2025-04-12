@@ -1,3 +1,4 @@
+// src/App.js
 import React, { useState, useEffect } from "react";
 import Navbar from "./components/Navbar";
 import Home from "./views/Home";
@@ -13,12 +14,13 @@ import Footer from "./components/Footer";
 import {
   BrowserRouter as Router,
   Route,
-  Routes,
-  Navigate
+  Routes
 } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
-import "./App.css";
-import "./assets/css/style.css";
+
+import "bootstrap/dist/css/bootstrap.min.css"; 
+import "./assets/css/style.css";             
+import "./App.css";                       
 import "./assets/css/about.css";
 import "./assets/css/search.css";
 import "./assets/css/watch.css";
@@ -27,7 +29,7 @@ import "./assets/css/box.css";
 import "./assets/css/cem1.css";
 import "./assets/css/cem2.css";
 import "./assets/css/contact.css";
-import "bootstrap/dist/css/bootstrap.min.css";
+
 
 function App() {
   const [load, upadateLoad] = useState(true);
@@ -45,17 +47,21 @@ function App() {
       <div className="App" id={load ? "no-scroll" : "scroll"}>
         <Navbar />
         <ScrollToTop />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/search" element={<Search />} />
-          <Route path="/watchList" element={<WatchList />} />
-          <Route path="/movieOfTheMonth" element={<MovieOfTheMonth />} />
-          <Route path="/boxOffice" element={<BoxOffice />} />
-          <Route path="/cemMenu1" element={<CemMenu1 />} />
-          <Route path="/cemMenu2" element={<CemMenu2 />} />
-          <Route path="/contactUs" element={<ContactUs />} />
-        </Routes>
+
+        <main className="app-main-content">
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/search" element={<Search />} />
+                <Route path="/watchList" element={<WatchList />} />
+                <Route path="/movieOfTheMonth" element={<MovieOfTheMonth />} />
+                <Route path="/boxOffice" element={<BoxOffice />} />
+                <Route path="/cemMenu1" element={<CemMenu1 />} />
+                <Route path="/cemMenu2" element={<CemMenu2 />} />
+                <Route path="/contactUs" element={<ContactUs />} />
+            </Routes>
+        </main>
+
         <Footer />
       </div>
     </Router>

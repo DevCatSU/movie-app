@@ -1,0 +1,41 @@
+.my-custom-purple-text {
+    color: #a012fd; /* Помаранчевий */
+}
+
+.search-view-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    width: 100%;
+    transition: justify-content 0.4s ease-out, padding-top 0.4s ease-out;
+    padding-top: 0;
+  }
+  .search-view-wrapper.active-search {
+    justify-content: flex-start;
+    padding-top: 2rem;
+  }
+  .search-view-wrapper .search-form {
+    max-width: 600px;
+    width: 100%;
+  }
+  .search-view-wrapper .search-heading {
+    transition: margin-bottom 0.4s ease-out;
+  }
+  .search-results-area {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.4s ease-out 0.1s, max-height 0.5s ease-out, margin-top 0.4s ease-out;
+  }
+  .search-view-wrapper.active-search .search-results-area {
+    opacity: 1;
+    max-height: 6000px;
+    margin-top: 2rem;
+  }
+  
+  
