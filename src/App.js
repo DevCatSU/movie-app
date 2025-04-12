@@ -17,9 +17,16 @@ import {
   Navigate
 } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
-import "./assets/css/style.css";
 import "./App.css";
+import "./assets/css/style.css";
 import "./assets/css/about.css";
+import "./assets/css/search.css";
+import "./assets/css/watch.css";
+import "./assets/css/month.css";
+import "./assets/css/box.css";
+import "./assets/css/cem1.css";
+import "./assets/css/cem2.css";
+import "./assets/css/contact.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
