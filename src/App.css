@@ -1,10 +1,22 @@
+html, body, #root {
+  height: 100%;
+}
+
 .App {
+  min-height: 100vh; 
+  display: flex; 
+  flex-direction: column; 
   text-align: center;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.app-main-content {
+  flex-grow: 1;
+  padding-top: 70px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
