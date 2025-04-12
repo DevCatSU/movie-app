@@ -1,13 +1,13 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
-function CemMenu1() {
+function MovieAnalytics() {
   return (
     <Container fluid className="sub">
       <Container>
         <Row>
           <h1>
-            <strong>Cem</strong> Menu1
+            <strong>Movie</strong> Analytics
           </h1>
         </Row>
         <Row>
@@ -101,4 +101,4 @@ function CemMenu1() {
   );
 }
 
-export default CemMenu1;
+export default MovieAnalytics;
