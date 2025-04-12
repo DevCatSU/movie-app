@@ -30,11 +30,14 @@ h2 {
 
 .sub h1{
   font-size: 3em;
-  padding-bottom: 10px;
+}
+
+.sub h1 strong{
+  color: #9302f4;  
 }
 
 .sub h2{
-  padding-bottom: 50px;
+  padding-bottom: 60px;
 }
 
 
