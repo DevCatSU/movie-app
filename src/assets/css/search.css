@@ -1,7 +1,6 @@
 .my-custom-purple-text {
     color: #a012fd; /* Помаранчевий */
 }
-
 .search-view-wrapper {
     display: flex;
     flex-direction: column;
@@ -10,11 +9,10 @@
     flex-grow: 1;
     width: 100%;
     transition: justify-content 0.4s ease-out, padding-top 0.4s ease-out;
-    padding-top: 0;
+    padding-top: 5px;
   }
   .search-view-wrapper.active-search {
     justify-content: flex-start;
-    padding-top: 2rem;
   }
   .search-view-wrapper .search-form {
     max-width: 600px;
@@ -35,7 +33,7 @@
   .search-view-wrapper.active-search .search-results-area {
     opacity: 1;
     max-height: 6000px;
-    margin-top: 2rem;
+    margin-top: 0.5rem;
   }
   
   

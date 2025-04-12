@@ -46,8 +46,8 @@ function MovieCard({ movie, onAdd, onRemove, onToggleWatched, isWatchlist = fals
           {isWatchlist ? (
             // Buttons shown when card is in the Watchlist view
             <>
-              <Button variant="outline-danger" size="sm" onClick={handleRemove}>Remove</Button>
-              <Button variant="outline-secondary" size="sm" onClick={handleToggleWatched}>
+              <Button variant="primary" size="sm" onClick={handleRemove}>Remove</Button>
+              <Button variant="primary" size="sm" onClick={handleToggleWatched}>
                 {movie.watched ? 'Mark Unwatched' : 'Mark Watched'}
               </Button>
             </>
