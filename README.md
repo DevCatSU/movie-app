@@ -17,17 +17,16 @@ The page will reload if you make edits.
 
 ## Built With
 
-used dependances
-dependencies": 
-    "axios": "^0.26.1",
-    "bootstrap": "^5.1.3",
-    "react": "^17.0.2",
-    "react-bootstrap": "^2.2.1",
-    "react-dom": "^17.0.2",
-    "react-icons": "^4.8.0",
-    "react-parallax-tilt": "^1.7.42",
-    "react-router-dom": "^6.2.2",
-    "react-scripts": "5.0.0",
+used dependencies
+axios
+bootstrap
+react
+react-bootstrap
+react-dom
+react-icons
+react-parallax-tilt
+react-router-dom
+react-scripts
 https://react-bootstrap.netlify.app/docs/components/navbar
 https://react-icons.github.io/react-icons/search/#q=ticket
 
