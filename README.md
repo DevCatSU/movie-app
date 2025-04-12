@@ -18,15 +18,25 @@ The page will reload if you make edits.
 ## Built With
 
 used dependencies
+
 axios
+
 bootstrap
+
 react
+
 react-bootstrap
+
 react-dom
+
 react-icons
+
 react-parallax-tilt
+
 react-router-dom
+
 react-scripts
+
 https://react-bootstrap.netlify.app/docs/components/navbar
 https://react-icons.github.io/react-icons/search/#q=ticket
 
