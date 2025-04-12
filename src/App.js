@@ -17,10 +17,19 @@ import {
   Routes
 } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
-import "./assets/css/style.css"; // Your main style.css
-import "./App.css";             // Your App.css (with sticky footer rules added)
+
+import "bootstrap/dist/css/bootstrap.min.css"; 
+import "./assets/css/style.css";             
+import "./App.css";                       
 import "./assets/css/about.css";
-import "bootstrap/dist/css/bootstrap.min.css";
+import "./assets/css/search.css";
+import "./assets/css/watch.css";
+import "./assets/css/month.css";
+import "./assets/css/box.css";
+import "./assets/css/cem1.css";
+import "./assets/css/cem2.css";
+import "./assets/css/contact.css";
+
 
 function App() {
   const [load, upadateLoad] = useState(true);
@@ -35,12 +44,10 @@ function App() {
 
   return (
     <Router>
-      {/* The .App class now gets flexbox styles from App.css */}
       <div className="App" id={load ? "no-scroll" : "scroll"}>
         <Navbar />
         <ScrollToTop />
 
-        {/* Wrap Routes in main tag with the specified class */}
         <main className="app-main-content">
             <Routes>
                 <Route path="/" element={<Home />} />
