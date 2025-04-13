@@ -10,7 +10,7 @@ function About() {
         <Row className="about-row">
           <Col md={7} className="about-text">
             <h1 className="about-title">
-            <strong>Know Who</strong> We Are
+              <strong>Know Who</strong> We Are
             </h1>
             <Aboutcard />
           </Col>
@@ -22,6 +22,5 @@ function About() {
     </Container>
   );
 }
-
 
 export default About;

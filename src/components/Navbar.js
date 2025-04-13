@@ -6,9 +6,10 @@ import logo from "../assets/img/logo.png";
 import { Link } from "react-router-dom";
 
 function NavBar() {
-  const [expand, updateExpanded] = useState(false);
-  const [navColour, updateNavbar] = useState(false);
+  const [expand, updateExpanded] = useState(false); // menu toggle
+  const [navColour, updateNavbar] = useState(false); // scroll style
 
+  // scroll event
   useEffect(() => {
     window.addEventListener("scroll", scrollHandler);
     return () => {
@@ -16,6 +17,7 @@ function NavBar() {
     };
   }, []);
 
+  // change nav color on scroll
   function scrollHandler() {
     updateNavbar(window.scrollY >= 20);
   }
@@ -28,9 +30,12 @@ function NavBar() {
       className={navColour ? "sticky" : "navbar"}
     >
       <Container>
+        {/* Logo */}
         <Navbar.Brand as={Link} to="/" className="d-flex">
           <img src={logo} className="img-fluid logo" alt="brand" />
         </Navbar.Brand>
+
+        {/* Toggle for mobile */}
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
           onClick={() => updateExpanded(expand ? false : "expanded")}
@@ -39,6 +44,8 @@ function NavBar() {
           <span></span>
           <span></span>
         </Navbar.Toggle>
+
+        {/* Menu links */}
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="/">
             <Nav.Item>
@@ -47,7 +54,7 @@ function NavBar() {
                 to="/about"
                 onClick={() => updateExpanded(false)}
               >
-                About
+                About Us
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>

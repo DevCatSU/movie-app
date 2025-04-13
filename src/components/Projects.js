@@ -9,6 +9,7 @@ function Projects() {
   return (
     <Container fluid className="project-section">
       <Container>
+        {/* Heading */}
         <h1>
           <strong>Top 3 </strong>Movies
         </h1>
@@ -16,7 +17,10 @@ function Projects() {
           Discover the Top 3 hottest new releases. <br />
           The most talked-about movies everyone’s watching right now.
         </h2>
+
+        {/* Cards Row */}
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          {/* Movie 1 */}
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={monster}
@@ -27,6 +31,7 @@ function Projects() {
             />
           </Col>
 
+          {/* Movie 2 */}
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={fran}
@@ -37,6 +42,7 @@ function Projects() {
             />
           </Col>
 
+          {/* Movie 3 */}
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={pride}

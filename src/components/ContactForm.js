@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { Form, Button, Row, Col, Alert } from "react-bootstrap";
+import { BsEnvelopeAtFill } from "react-icons/bs";
 
 function ContactForm() {
+  // States
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -18,12 +20,14 @@ function ContactForm() {
 
   const [submitted, setSubmitted] = useState(false);
 
+  // Input change
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
     setErrors({ ...errors, [name]: "" });
   };
 
+  // Submit
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -48,6 +52,8 @@ function ContactForm() {
 
     setErrors({});
     setSubmitted(true);
+
+    // Reset after submit
     setTimeout(() => setSubmitted(false), 3000);
     setFormData({ firstName: "", lastName: "", email: "", message: "" });
   };
@@ -55,6 +61,7 @@ function ContactForm() {
   return (
     <div className="contact-form">
       <Form onSubmit={handleSubmit} noValidate>
+        {/* Name */}
         <Row>
           <Col md={6}>
             <Form.Group controlId="formFirstName" className="mb-3">
@@ -89,6 +96,7 @@ function ContactForm() {
           </Col>
         </Row>
 
+        {/* Email */}
         <Form.Group controlId="formEmail" className="mb-3">
           <Form.Control
             type="email"
@@ -103,6 +111,7 @@ function ContactForm() {
           </Form.Control.Feedback>
         </Form.Group>
 
+        {/* Message */}
         <Form.Group controlId="formMessage" className="mb-3">
           <Form.Control
             as="textarea"
@@ -118,10 +127,12 @@ function ContactForm() {
           </Form.Control.Feedback>
         </Form.Group>
 
+        {/* Submit */}
         <Button variant="primary" type="submit">
-          Submit
+          <BsEnvelopeAtFill /> &nbsp; Submit &nbsp;
         </Button>
 
+        {/* Success msg */}
         {submitted && (
           <p className="success-message">Message sent successfully!</p>
         )}
