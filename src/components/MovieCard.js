@@ -1,65 +1,69 @@
 // src/components/MovieCard.js
-// Displays a single movie with details and action buttons using react-bootstrap Card.
+// Displays a single movie card using react-bootstrap components.
+// Links image and title to the external TMDb movie page.
 import React from 'react';
 import { Card, Button, Stack } from 'react-bootstrap';
-import { IMAGE_BASE_URL } from '../config'; // Base URL for movie poster images
+import { IMAGE_BASE_URL } from '../config'; // Ensure path is correct
 
 const placeholderImage = 'https://via.placeholder.com/300x450?text=No+Image';
 
 function MovieCard({ movie, onAdd, onRemove, onToggleWatched, isWatchlist = false }) {
-  // Event handlers that call functions passed via props
   const handleAdd = () => onAdd && onAdd(movie);
   const handleRemove = () => onRemove && onRemove(movie.id);
   const handleToggleWatched = () => onToggleWatched && onToggleWatched(movie.id);
 
-  // Construct image URL or use placeholder
   const imageUrl = movie.poster_path
     ? `${IMAGE_BASE_URL}${movie.poster_path}`
     : placeholderImage;
 
-  // Apply style for 'watched' state if applicable
+  // Construct the external link URL to TMDb
+  const tmdbUrl = `https://www.themoviedb.org/movie/${movie.id}`;
+
+  // Style for watched state opacity
   const cardStyle = isWatchlist && movie.watched ? { opacity: 0.6, transition: 'opacity 0.3s ease' } : { transition: 'opacity 0.3s ease' };
 
   return (
-    // Bootstrap Card component with dark theme classes and full height
     <Card className="h-100 bg-dark text-white border-secondary" style={cardStyle}>
-      <Card.Img
-        variant="top"
-        src={imageUrl}
-        alt={movie.title || 'N/A'}
-        onError={(e) => { e.target.onerror = null; e.target.src = placeholderImage; }} // Fallback for broken images
-        style={{ aspectRatio: '2 / 3', objectFit: 'cover' }} // Maintain poster aspect ratio
-      />
-      {/* Card body uses Flexbox to structure content */}
+      {/* Image is an external link */}
+      <a href={tmdbUrl} target="_blank" rel="noopener noreferrer">
+        <Card.Img
+          variant="top"
+          src={imageUrl}
+          alt={movie.title || 'N/A'}
+          onError={(e) => { e.target.onerror = null; e.target.src = placeholderImage; }}
+          style={{ aspectRatio: '2 / 3', objectFit: 'cover' }}
+        />
+      </a>
       <Card.Body className="d-flex flex-column">
-        {/* Movie Title (truncated if long) */}
-        <Card.Title as="h6" className="mb-1 text-truncate">
-          {movie.title || 'Title unavailable'}
-        </Card.Title>
-        {/* Movie Release Year */}
-        <Card.Text as="small" className="text-muted mb-2">
-          {movie.release_date ? movie.release_date.substring(0, 4) : 'N/A'}
-        </Card.Text>
+        <div>
+            {/* Title is also an external link */}
+            <a href={tmdbUrl} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
+                <Card.Title as="h6" className="mb-1 text-truncate" title={movie.title || 'Title unavailable'}>
+                  {movie.title || 'Title unavailable'}
+                </Card.Title>
+            </a>
+            <Card.Text as="small" className="text-muted mb-2">
+              {movie.release_date ? movie.release_date.substring(0, 4) : 'N/A'}
+            </Card.Text>
+        </div>
 
-        {/* Action buttons stacked vertically at the bottom */}
+        {/* Action Buttons */}
         <Stack gap={2} className="mt-auto">
           {isWatchlist ? (
-            // Buttons shown when card is in the Watchlist view
-            <>
+            <> {/* Use primary variant matching your style.css */}
               <Button variant="primary" size="sm" onClick={handleRemove}>Remove</Button>
               <Button variant="primary" size="sm" onClick={handleToggleWatched}>
                 {movie.watched ? 'Mark Unwatched' : 'Mark Watched'}
               </Button>
             </>
           ) : (
-            // Button shown when card is in the Search view
             <Button
-              variant="primary" // Uses Bootstrap primary color (customized via CSS/SCSS)
+              variant="primary" // Use primary variant
               size="sm"
               onClick={handleAdd}
-              disabled={!onAdd} // Button is disabled if onAdd prop is null
+              disabled={!onAdd}
             >
-              {onAdd ? 'Add to Watchlist' : 'In Watchlist'} {/* Text changes based on disabled state */}
+              {onAdd ? 'Add to Watchlist' : 'In Watchlist'}
             </Button>
           )}
         </Stack>
