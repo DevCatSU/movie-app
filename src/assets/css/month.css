@@ -1,0 +1,86 @@
+.movie-detail-wrapper {
+    text-align: left;
+    background-color: #fff;
+  }
+  
+  .movie-title {
+    font-weight: bold;
+    font-size: 2.5em;
+    margin-top: 1rem;
+    margin-bottom: 0.3rem;
+  }
+  
+  .movie-runtime {
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  
+  .movie-subtitle {
+    font-size: 1rem;
+  }
+  
+  .movie-description {
+    font-size: 1.05rem;
+    line-height: 1.6;
+  }
+  
+  .movie-meta {
+    font-size: 1.05rem;
+    margin: 0.5rem 0;
+  }
+  
+  .movie-poster {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+
+  @media (max-width: 768px) {
+    .movie-detail-wrapper {
+      padding: 30px 15px;
+    }
+  
+    .movie-title {
+      font-size: 1.5rem;
+      text-align: left;
+    }
+  
+    .movie-runtime {
+      font-size: 0.9rem;
+      text-align: right;
+    }
+  
+    .movie-subtitle,
+    .movie-description,
+    .movie-meta {
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+  
+    .movie-poster {
+      width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+  
+    .ratio {
+      width: 100%;
+      height: auto;
+    }
+  
+    iframe {
+      width: 100%;
+      height: 250px;
+    }
+  
+    .movie-text-section {
+      text-align: left;
+    }
+  
+    .d-flex {
+      flex-direction: column;
+      align-items: flex-start !important;
+    }
+  }
+  

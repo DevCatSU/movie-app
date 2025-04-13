@@ -1,13 +1,13 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
-function CemMenu2() {
+function GenreTrends() {
   return (
     <Container fluid className="sub">
       <Container>
         <Row>
           <h1>
-            <strong>Cem</strong> Menu2
+            <strong>Genre</strong> Trends
           </h1>
         </Row>
         <Row>
@@ -101,4 +101,4 @@ function CemMenu2() {
   );
 }
 
-export default CemMenu2;
+export default GenreTrends;

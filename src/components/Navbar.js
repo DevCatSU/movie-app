@@ -42,42 +42,74 @@ function NavBar() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="/">
             <Nav.Item>
-              <Nav.Link as={Link} to="/about" onClick={() => updateExpanded(false)}>
+              <Nav.Link
+                as={Link}
+                to="/about"
+                onClick={() => updateExpanded(false)}
+              >
                 About
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link as={Link} to="/search" onClick={() => updateExpanded(false)}>
+              <Nav.Link
+                as={Link}
+                to="/search"
+                onClick={() => updateExpanded(false)}
+              >
                 Search
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link as={Link} to="/watchList" onClick={() => updateExpanded(false)}>
+              <Nav.Link
+                as={Link}
+                to="/watchList"
+                onClick={() => updateExpanded(false)}
+              >
                 Watch List
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link as={Link} to="/movieOfTheMonth" onClick={() => updateExpanded(false)}>
+              <Nav.Link
+                as={Link}
+                to="/movieOfTheMonth"
+                onClick={() => updateExpanded(false)}
+              >
                 Movie of the Month
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link as={Link} to="/boxOffice" onClick={() => updateExpanded(false)}>
+              <Nav.Link
+                as={Link}
+                to="/boxOffice"
+                onClick={() => updateExpanded(false)}
+              >
                 Box Office
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link as={Link} to="/cemMenu1" onClick={() => updateExpanded(false)}>
-                Cem Menu1
+              <Nav.Link
+                as={Link}
+                to="/movieAnalytics"
+                onClick={() => updateExpanded(false)}
+              >
+                Movie Analytics
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link as={Link} to="/cemMenu2" onClick={() => updateExpanded(false)}>
-                Cem Menu2
+              <Nav.Link
+                as={Link}
+                to="/genreTrends"
+                onClick={() => updateExpanded(false)}
+              >
+                Genre Trends
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link as={Link} to="/contactUs" onClick={() => updateExpanded(false)}>
+              <Nav.Link
+                as={Link}
+                to="/contactUs"
+                onClick={() => updateExpanded(false)}
+              >
                 Contact Us
               </Nav.Link>
             </Nav.Item>

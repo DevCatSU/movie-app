@@ -7,8 +7,8 @@ import Search from "./views/Search";
 import WatchList from "./views/WatchList";
 import MovieOfTheMonth from "./views/MovieOfTheMonth";
 import BoxOffice from "./views/BoxOffice";
-import CemMenu1 from "./views/CemMenu1";
-import CemMenu2 from "./views/CemMenu2";
+import MovieAnalytics from "./views/MovieAnalytics";
+import GenreTrends from "./views/GenreTrends";
 import ContactUs from "./views/ContactUs";
 import Footer from "./components/Footer";
 import {
@@ -26,8 +26,8 @@ import "./assets/css/search.css";
 import "./assets/css/watch.css";
 import "./assets/css/month.css";
 import "./assets/css/box.css";
-import "./assets/css/cem1.css";
-import "./assets/css/cem2.css";
+import "./assets/css/analytics.css";
+import "./assets/css/genre.css";
 import "./assets/css/contact.css";
 
 
@@ -56,8 +56,8 @@ function App() {
                 <Route path="/watchList" element={<WatchList />} />
                 <Route path="/movieOfTheMonth" element={<MovieOfTheMonth />} />
                 <Route path="/boxOffice" element={<BoxOffice />} />
-                <Route path="/cemMenu1" element={<CemMenu1 />} />
-                <Route path="/cemMenu2" element={<CemMenu2 />} />
+                <Route path="/movieAnalytics" element={<MovieAnalytics />} />
+                <Route path="/genreTrends" element={<GenreTrends />} />
                 <Route path="/contactUs" element={<ContactUs />} />
             </Routes>
         </main>
