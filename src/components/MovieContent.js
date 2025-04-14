@@ -22,7 +22,7 @@ function MovieContent() {
         <Col md={8}>
           <div className="ratio ratio-16x9 h-100">
             <iframe
-              src="https://www.youtube.com/embed/riK-6emCvjQ?si"
+              src="https://www.youtube.com/embed/OAJ6UVNDt1E"
               title="Movie Trailer"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen

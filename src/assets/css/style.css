@@ -17,29 +17,34 @@ h1 {
   font-size: 3em;
 }
 
+h1 strong {
+  color: #9302f4;
+}
+
 h2 {
   font-size: 1.5em;
   padding: 10px 0 10px 0;
 }
 
-
-.sub{
+.sub {
   margin-top: 100px !important;
   padding-bottom: 100px;
+  max-width: 80%;
+  width: 100%;
+  margin: 0px auto;
 }
 
-.sub h1{
+.sub h1 {
   font-size: 3em;
 }
 
-.sub h1 strong{
-  color: #9302f4;  
+.sub h1 strong {
+  color: #9302f4;
 }
 
-.sub h2{
+.sub h2 {
   padding-bottom: 60px;
 }
-
 
 /* --------- */
 /*Scrollbar   */
@@ -252,6 +257,17 @@ h2 {
   background: var(--color-black);
   height: 600px;
   position: relative;
+}
+
+.hero .carousel-caption {
+  top: 55%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+}
+
+.hero .carousel-caption h1 {
+  font-weight: bold;
 }
 
 @media (max-width: 767px) {
