@@ -1,0 +1,97 @@
+.stat-card {
+  background-color: #343a40;
+  border: 1px solid #495057;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+  height: 100%;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.stat-card .card-title {
+  color: #adb5bd;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.stat-card .stat-value {
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0.5rem 0;
+}
+
+.movie-table {
+  background-color: #343a40;
+  color: #e9ecef;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.movie-table thead th {
+  background-color: #212529;
+  color: #adb5bd;
+  border-color: #495057;
+  font-weight: 500;
+  padding: 1rem;
+  white-space: nowrap;
+}
+
+.movie-table tbody tr {
+  transition: background-color 0.2s ease;
+}
+
+.movie-table tbody tr:hover {
+  background-color: #2c3034;
+}
+
+.movie-table tbody td {
+  border-color: #495057;
+  padding: 0.75rem 1rem;
+  vertical-align: middle;
+}
+
+.movie-table .movie-poster {
+  width: 40px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-right: 12px;
+}
+
+.movie-filter-section {
+  background-color: #2c3034;
+  border-radius: 8px;
+  padding: 1.25rem;
+  margin-bottom: 2rem;
+  border: 1px solid #495057;
+}
+
+.sub {
+  background-color: #212529;
+  color: #ffffff;
+  padding: 2rem 0;
+  min-height: 100vh;
+}
+
+.sub h1 {
+  margin-bottom: 0.5rem;
+  font-size: 2.5rem;
+}
+
+.sub h2 {
+  color: #adb5bd;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.sub h3 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
