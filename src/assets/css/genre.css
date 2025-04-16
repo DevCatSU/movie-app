@@ -1,0 +1,109 @@
+.sub {
+  background-color: #212529;
+  color: #ffffff;
+  padding: 2rem 0;
+  min-height: 100vh;
+}
+
+.sub h1 {
+  margin-bottom: 0.5rem;
+  font-size: 2.5rem;
+}
+
+.sub h2 {
+  color: #adb5bd;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.sub h3 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.chart-container {
+  background-color: #343a40 !important;
+  border: 1px solid #495057;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  height: 500px;
+}
+
+.chart-container:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.form-check-input {
+  background-color: #495057;
+  border-color: #6c757d;
+}
+
+.form-check-input:checked {
+  background-color: #8884d8;
+  border-color: #8884d8;
+}
+
+.form-check-label {
+  color: #e9ecef;
+  padding-left: 0.25rem;
+}
+
+.genre-selection-area {
+  background-color: #2c3034;
+  border-radius: 8px;
+  padding: 1.25rem;
+  margin-bottom: 2rem;
+  border: 1px solid #495057;
+}
+
+.genre-explanation {
+  background-color: #2c3034;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+  border: 1px solid #495057;
+}
+
+.genre-explanation p {
+  color: #ced4da;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.recharts-wrapper .recharts-cartesian-grid-horizontal line,
+.recharts-wrapper .recharts-cartesian-grid-vertical line {
+  stroke: #495057;
+}
+
+.recharts-wrapper .recharts-tooltip-wrapper {
+  background-color: #343a40;
+  border: 1px solid #6c757d;
+  border-radius: 4px;
+}
+
+.recharts-wrapper .recharts-default-tooltip {
+  background-color: #212529 !important;
+  border: none !important;
+  border-radius: 4px;
+  padding: 8px !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.recharts-label, 
+.recharts-text, 
+.recharts-cartesian-axis-tick-value {
+  fill: #adb5bd !important;
+}
+
+.recharts-legend-wrapper {
+  background-color: rgba(33, 37, 41, 0.6);
+  border-radius: 4px;
+  padding: 8px !important;
+}
+
+.recharts-tooltip-cursor {
+  stroke: #6c757d;
+}
