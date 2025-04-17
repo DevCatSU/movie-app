@@ -59,50 +59,38 @@
 }
 
 @media (max-width: 768px) {
-  .movie-detail-wrapper {
+  .movie-detail-page .movie-detail-wrapper {
     padding: 30px 15px;
   }
 
-  .movie-title {
+  .movie-detail-page .movie-title {
     font-size: 1.5rem;
     text-align: left;
   }
 
-  .movie-runtime {
-    font-size: 0.9rem;
-    text-align: right;
-  }
-
-  .movie-subtitle,
-  .movie-description,
-  .movie-meta {
-    font-size: 0.95rem;
-    line-height: 1.5;
-  }
-
-  .movie-poster {
+  .movie-detail-page .movie-poster {
     width: 100%;
     height: auto;
     margin-bottom: 20px;
   }
 
-  .ratio {
-    width: 100%;
-    height: auto;
+  .movie-detail-page .ratio {
+     width: 100%;
+     height: auto;
   }
 
-  iframe {
-    width: 100%;
-    height: 250px;
+   .movie-detail-page iframe {
+     width: 100%;
+     height: 250px;
   }
 
-  .movie-text-section {
+  .movie-detail-page .movie-text-section {
     text-align: left;
   }
 
-  .d-flex {
+  .movie-detail-page .d-flex {
     flex-direction: column;
-    align-items: flex-start !important;
+    align-items: flex-start !important; 
   }
 }
 

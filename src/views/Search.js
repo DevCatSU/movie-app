@@ -4,7 +4,6 @@ import { Container, Row, Col, Form, Button, Spinner, Alert } from 'react-bootstr
 import { API_KEY, API_BASE_URL } from '../config';
 import MovieCard from '../components/MovieCard';
 import { addMovieToStorage, getWatchlistFromStorage } from '../utils/localStorage';
-import '../assets/css/search.css'; // Assuming this holds animation styles
 
 const DEBOUNCE_DELAY = 500;
 
@@ -100,28 +99,29 @@ function Search() {
         <Row><h2>Find the Movie you are interested in</h2></Row>
 
         
-        <Form onSubmit={handleSearchSubmit} className="search-form mb-4 mx-auto">
-          <Row className="g-2 align-items-center"> 
-            
-            <Col>
+        <Form onSubmit={handleSearchSubmit} className="search-form mb-4 mx-auto" style={{ maxWidth: '700px' }}>
+          {/* Рядок для елементів форми з невеликими відступами g-2 */}
+          <Row className="g-2 align-items-center">
+            {/* Поле вводу: займає весь простір на моб., потім автоматично */}
+            <Col xs={12} md>
               <Form.Control
                 type="text"
                 value={query}
                 onChange={handleInputChange}
                 placeholder="Enter movie title"
                 aria-label="Search for movies"
-                className="bg-dark text-white border-secondary"
+                className="bg-dark text-white border-secondary" // Стилізація під темну тему
               />
             </Col>
 
+            {/* Вибір жанру: займає весь простір на моб., потім половину на sm, потім авто */}
             {genresList.length > 0 && (
-              <Col xs="auto" md={3} lg={2}> 
+              <Col xs={12} sm={6} md="auto">
                 <Form.Select
                   aria-label="Select Genre Filter"
                   value={selectedGenre}
                   onChange={handleGenreChange}
-                  className="bg-dark text-white border-secondary"
-                  size="sm" 
+                  className="bg-dark text-white border-secondary" // Стилізація під темну тему
                 >
                   <option value="">All Genres</option>
                   {genresList.map(genre => (
@@ -133,15 +133,16 @@ function Search() {
               </Col>
             )}
 
-            
-            <Col xs="auto">
-              <Button variant="primary" type="submit" disabled={loading && query.trim().length > 0}>
+            {/* Кнопка: займає весь простір на моб., потім половину на sm, потім авто */}
+            <Col xs={12} sm={6} md="auto">
+              {/* w-100 розтягує кнопку на всю ширину колонки */}
+              <Button variant="primary" type="submit" disabled={loading && query.trim().length > 0} className="w-100">
                 {loading && query.trim().length > 0 ? <Spinner as="span" animation="border" size="sm" /> : 'Search'}
               </Button>
             </Col>
-
           </Row>
         </Form>
+
 
         
         <div className="search-results-area">

@@ -35,7 +35,7 @@ function MovieOfTheMonth() {
   };
 
   return (
-    <Container fluid className="sub">
+    <Container fluid className="sub movie-detail-page pt-5 pb-5">
       <Container>
         <Row>
           <h1>
