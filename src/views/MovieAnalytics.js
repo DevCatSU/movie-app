@@ -65,7 +65,7 @@ function MovieAnalytics() {
       <Container>
         <Row>
           <h1>
-            <strong>Box Office</strong> Stats
+            <strong>Movie</strong> Analytics
           </h1>
         </Row>
         <Row>
