@@ -1,7 +1,12 @@
 {
   "files": {
+<<<<<<< HEAD
     "main.css": "/static/css/main.2a936335.css",
     "main.js": "/static/js/main.80c24cb4.js",
+=======
+    "main.css": "/static/css/main.961cd168.css",
+    "main.js": "/static/js/main.65f3dc5e.js",
+>>>>>>> d96dc827ba6eacb146beb32cd0016cf49fdbc1c8
     "static/media/minecraft.webp": "/static/media/minecraft.c75a724b08db59378a2f.webp",
     "static/media/sinners.webp": "/static/media/sinners.06f18cca525230ed6883.webp",
     "static/media/about.png": "/static/media/about.ede1e1553f919ea79d63.png",
@@ -11,11 +16,20 @@
     "static/media/fran.webp": "/static/media/fran.01c51c863b7eed5d120a.webp",
     "static/media/pride.webp": "/static/media/pride.0c0db2c3414d9d5584ea.webp",
     "index.html": "/index.html",
+<<<<<<< HEAD
     "main.2a936335.css.map": "/static/css/main.2a936335.css.map",
     "main.80c24cb4.js.map": "/static/js/main.80c24cb4.js.map"
   },
   "entrypoints": [
     "static/css/main.2a936335.css",
     "static/js/main.80c24cb4.js"
+=======
+    "main.961cd168.css.map": "/static/css/main.961cd168.css.map",
+    "main.65f3dc5e.js.map": "/static/js/main.65f3dc5e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.961cd168.css",
+    "static/js/main.65f3dc5e.js"
+>>>>>>> d96dc827ba6eacb146beb32cd0016cf49fdbc1c8
   ]
 }
