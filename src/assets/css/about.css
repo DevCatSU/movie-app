@@ -1,0 +1,58 @@
+.about-row {
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  .about-text {
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    padding-right: 70px;
+  }
+  
+  .about-title {
+    padding-bottom: 20px;
+  }
+  
+  .about-img-col {
+    padding-top: 120px;
+    padding-bottom: 50px;
+  }
+  
+  
+  @media (max-width: 767px) {
+    .tech-icons {
+      margin: 10px !important;
+    }
+  }
+  
+  .tech-icons:hover {
+    transform: scale(1.05) !important;
+    overflow: hidden !important;
+    border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
+  }
+  .tech-icon-images {
+    padding: 20px !important;
+    line-height: 1.6 !important;
+  }
+  
+  .quote-card-view {
+    border: none !important;
+    color: #181a27 !important;
+    background-color: transparent !important;
+  }
+  
+  .about-activity {
+    list-style: none !important;
+    text-align: left !important;
+    padding-left: 1px !important;
+  }
+  
+  @media (max-width: 767px) {
+    .about-img {
+      padding-top: 0 !important;
+    }
+    .about-text {
+        padding-right: 10px;
+      }
+  }

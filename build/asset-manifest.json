@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2a936335.css",
+    "main.js": "/static/js/main.80c24cb4.js",
+    "static/media/minecraft.webp": "/static/media/minecraft.c75a724b08db59378a2f.webp",
+    "static/media/sinners.webp": "/static/media/sinners.06f18cca525230ed6883.webp",
+    "static/media/about.png": "/static/media/about.ede1e1553f919ea79d63.png",
+    "static/media/drop.webp": "/static/media/drop.7a38de9cf683a5c1bb6e.webp",
+    "static/media/bestOffer.jpg": "/static/media/bestOffer.2d62d3cd3937ea219a3f.jpg",
+    "static/media/monster.webp": "/static/media/monster.4b6baff065aa53d1a44b.webp",
+    "static/media/fran.webp": "/static/media/fran.01c51c863b7eed5d120a.webp",
+    "static/media/pride.webp": "/static/media/pride.0c0db2c3414d9d5584ea.webp",
+    "index.html": "/index.html",
+    "main.2a936335.css.map": "/static/css/main.2a936335.css.map",
+    "main.80c24cb4.js.map": "/static/js/main.80c24cb4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2a936335.css",
+    "static/js/main.80c24cb4.js"
+  ]
+}
